@@ -1,0 +1,49 @@
+#+TITLE: Org Mode Basic
+#+DESCRIPTION: Nagvigation shortcut in Org mode
+#+AUTHOR: ggluigi
+
+* Keys- M- (Alt), C- (Ctrl), S- (shift)
+
+* Headline: with '*'
+** Headline2: with "**"
+
+* Nagvigate on bullet/list
+** M(Alt)-RET	: org-meta-return, enter with same bullet indented)
+** M-(hjkl)	: move bullet indent inward/outward, move bullet section upward/downward (re-order)
+** TAB		: collapse or expand the subtree
+
+* Table
+** Make a table (the table cannot be on the first line of bullet)
+| Top field 1 | Top field 2                     |
+|-------------+---------------------------------|
+| SPC-m-b-'-' | insert table headline           |
+| S-RET       | duplicate a field in cell below |
+|             |                                 |
+| placeholder |                                 |
+|             |                                 |
+
+** Table Motion
+*** M-(hjkl)	: Move row/column up/down/left/right
+*** M-S-l	: Insert new column
+*** M-S-h	: Delete current column
+*** M-S-j	: Insert new row
+*** M-S-k	: Delete current row
+
+* TODO [1/2] ('['+'/'+']': to add the list completion) [50%] ('['+'%'+']': to add % completion)
+** [ ] example 1
+** [X] example 2
+** S-left/right : cycle through the TODO state for the item
+
+* Insert Snippets
+** SPC-i-s
+** bang			: #!/usr/bin/env bash
+** current time	: Thu Sep  2 11:47:13 2021
+** code			: #+begin_c++ options
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World\n";
+    return 0;
+}
+#+end_lang
